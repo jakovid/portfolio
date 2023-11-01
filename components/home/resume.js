@@ -61,7 +61,7 @@ export default function BuildResume(){
                 <div className="flex justify-center p-2 bg-purple-400 h-10 rounded-tl-full">
                     SEPTEMBER 2017 - JUNE 2019
                 </div>
-                <div className="col-span-2 border-purple-400 border-s-2 border-t-2 border-b-2 ps-4 pt-2 pb-16 ">
+                <div className="col-span-2 border-purple-400 border-s-2 border-t-2 ps-4 pt-2 pb-16 ">
                     <div className="font-bold text-xl">Master of Law @ 复旦大学 (Fudan University) (fulltime)</div>
                     <div className="pb-6"> 上海 (Shanghai)</div>
                     <div>
@@ -80,7 +80,7 @@ export default function BuildResume(){
             <div className="flex justify-center p-2 bg-purple-400 h-10 rounded-tl-full">
                     AUGUST 2011 - MAY 2014
                 </div>
-                <div className="col-span-2 border-purple-400 border-s-2 border-t-2 border-b-2 ps-4 pt-2 pb-16 ">
+                <div className="col-span-2 border-purple-400 border-s-2 border-b-2 ps-4 pt-2 pb-16 ">
                     <div className="font-bold text-xl">Bachelor of Science in Business @ Miami University (fulltime)</div>
                     <div className="pb-6"> Oxford, OH</div>
                     <div>
