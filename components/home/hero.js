@@ -16,10 +16,10 @@ export default function BuildHomeHero(){
                         <div>🛫 '16: One way ticket to 🇨🇳, <a href="https://www.cninsights.com/" className="text-purple-400">edited industry reports</a></div>
                         <div>🎓 '17: Fullride scholarship to study <a href="https://sirpa-en.fudan.edu.cn/" className="text-purple-400">foreign aid competition</a></div>
                         <div>💼 '18: <a href="https://www.amcham-shanghai.org/" className="text-purple-400">Helped American businesses</a> navigate the Chinese markets</div>
-                        <div>🧋 '19: Turned down <a href="https://www.allbrightlaw.com/" className="text-purple-400">law firm</a> job to co-found a startup in Taipei</div>
-                        <div>🍻 '20: Realized 2020 is terrible for tourism, pivoted to <a href="https://www.linkedin.com/company/onemoredrink" className="text-purple-400">nightlife</a></div>
-                        <div>🌐 '21: Realized 2021 is terrible for nightlife, built a <a href="https://www.skyeducation.online" className="text-purple-400">website</a></div>
-                        <div>🏖️ '22: Not much happened this year, it was pretty chill</div>
+                        <div>🧋 '19: <a href="https://www.pressreader.com/mongolia/the-ub-post/20190703/281767040773947" className="text-purple-400">Comedy festival</a> in 🇲🇳, tourism <a href="https://www.linkedin.com/company/onemoredrink" className="text-purple-400">startup</a> in Taipei</div>
+                        <div>🍻 '20: Bad year for tourism, pivoted to nightlife, wrote jokes for <a href="https://zh.wikipedia.org/zh-hans/%E5%8D%9A%E6%81%A9%E5%A4%9C%E5%A4%9C%E7%A7%80" className="text-purple-400">博恩夜夜秀</a></div>
+                        <div>🌐 '21: Bad year for nightlife, closed shop, built a <a href="https://www.skyeducation.online" className="text-purple-400">website</a></div>
+                        <div>🎤 '22: Performed my first headline show, wrote roasts for <a href="https://www.youtube.com/watch?v=rA2hdUWgdnc" className="text-purple-400">炎上</a> </div>
                         <div>🗽 '23: Helped a <a href="https://elmntri.com/" className="text-purple-400">startup studio</a>, returned to 🇺🇸 to join a <a href="https://formation.dev/" className="text-purple-400">fellowship</a></div>
                     </div>
                 </div>
