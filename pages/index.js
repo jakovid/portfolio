@@ -1,6 +1,7 @@
 import BuildHeader from "@/components/header"
 import BuildHomeHero from "@/components/home/hero"
 import BuildResume from "@/components/home/resume"
+import BuildProjects from "@/components/home/projects"
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <BuildHeader />
       <BuildHomeHero />
       <BuildResume />
+      <BuildProjects />
       
     </main>
   )
