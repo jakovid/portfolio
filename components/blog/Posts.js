@@ -17,7 +17,7 @@ export default function Posts(){
       }, []); 
 
     return(
-        <section>
+        <section className="flex flex-col items-center w-2/3 p-8">
             <h2 className="text-4xl font-bold">Blog</h2>
             <ul className="w-full">
                 {posts.map(post => (

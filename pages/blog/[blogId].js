@@ -2,36 +2,36 @@ import getFormattedDate from "@/lib/getFormatedData";
 import { getPostData, getSortedPostsData } from "@/lib/posts";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import BuildHeader from "@/components/header";
 
 export default function Post({ post }) {
   const router = useRouter();
 
-  // If the page is not yet generated, this will be displayed
-  // initially until getStaticProps() finishes running
   if (router.isFallback) {
     return <div>Loading...</div>
   }
 
-  // Format the post date for display
   const pubDate = getFormattedDate(post.date);
 
   return (
-    <main className="px-6 prose prose-xl prose-slate">
-      <h1 className="text-3xl mt-4">{post.title}</h1>
-      <p className="mt-0">{pubDate}</p>
-      <article>
-        <section dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-        <p>
-          <Link href="/blog">
-            Back to Blogs
-          </Link>
-        </p>
-      </article>
+    <main className="prose prose-xl prose-slate flex flex-col w-full items-center">
+        <BuildHeader />
+        <div className="flex flex-col items-center w-2/3">
+            <h1 className="text-4xl font-bold mt-4">{post.title}</h1>
+            <p className="mt-0">{pubDate}</p>
+            <article className="flex flex-col items-center">
+                <section className="flex gap-4 flex-col py-4" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+                <p>
+                <Link href="/blog" className="border-white border-2 py-2 px-4 rounded-s-full rounded-e-full hover:bg-purple-400 hover:border-purple-400">
+                    Back to Blogs
+                </Link>
+                </p>
+            </article>
+        </div>
     </main>
   );
 }
 
-// getStaticProps runs at build time in production, and it won't be included in the JS bundle for the browser.
 export async function getStaticProps({ params }) {
   const post = await getPostData(params.blogId);
   if (!post) {
@@ -40,7 +40,6 @@ export async function getStaticProps({ params }) {
   return { props: { post } };
 }
 
-// You also need getStaticPaths if you’re using dynamic routes and getStaticProps.
 export async function getStaticPaths() {
   const posts = getSortedPostsData();
   const paths = posts.map((post) => {

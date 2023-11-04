@@ -1,10 +1,10 @@
-import Navbar from "@/components/blog/Navbar"
+import BuildHeader from "@/components/header"
 import Posts from "@/components/blog/Posts"
 
 export default function Blog(){
     return(
-        <div>
-            <Navbar />
+        <div className="flex flex-col items-center w-full">
+            <BuildHeader />
             <Posts />
         </div>
     )
