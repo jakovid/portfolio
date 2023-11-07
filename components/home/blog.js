@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function BuildBlog(){
     const [posts, setPosts] = useState([])
@@ -39,13 +40,12 @@ export default function BuildBlog(){
         <div className="flex flex-col justify-center items-center">
             <div className="h-2 w-full bg-purple-400"></div>
             <div className="text-4xl font-bold p-8">My Written Content</div>
-            <div>
+            <div className="pb-8">
                 {displayedPosts && displayedPosts.map(post => (
-                    <div key={post.id} className="flex gap-2">
-                        <div className="text-purple-400">"{post.title}"</div>
-                        <div> - </div>
+                    <Link href={`/blog/${post.id}`} key={post.id} className="flex cursor-pointer bg-purple-400 flex-wrap w-48 h-48 items-center p-4 rounded-md border-white border-2">
+                        <div className="text-white text-2xl font-bold">"{post.title}"</div>
                         <div>{post.date}</div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>
