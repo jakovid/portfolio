@@ -6,12 +6,12 @@ import BuildBlog from "@/components/home/blog"
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <BuildHeader />
       <BuildHomeHero />
       <BuildResume />
       <BuildProjects />
-      <BuildBlog />
+      {/* <BuildBlog /> */}
     </main>
   )
 }
