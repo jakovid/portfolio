@@ -44,7 +44,7 @@ export default function BuildBlog(){
         if (newDisplayedPointer < 0){
             newDisplayedPointer = posts.length - 4
         }
-
+        console.log("Click!")
         setDisplayedPointer(newDisplayedPointer)
         handleSetDisplayed()
     }
@@ -54,7 +54,7 @@ export default function BuildBlog(){
             <div className="h-2 w-full bg-purple-400"></div>
             <div className="text-4xl font-bold p-8">Some Stuff I Wrote</div>
             <div className="pb-8 flex items-center gap-8">
-                <div className="w-24 h-24 border-white border-b-2 border-l-8 rotate-45 cursor-pointer" onClick={(e) => {
+                <div className="w-24 h-24 border-white border-b-2 border-l-8 rotate-45 cursor-pointer hover:border-purple-400" onClick={(e) => {
                     handleChangeDisplayed(-3)
                 }}></div>
                 {displayedPosts && displayedPosts.map(post => (
@@ -63,7 +63,7 @@ export default function BuildBlog(){
                         <div>{post.date}</div>
                     </Link>
                 ))}
-                <div className="w-24 h-24 border-white border-t-2 border-r-8 rotate-45 cursor-pointer" onClick={(e) => {
+                <div className="w-24 h-24 border-white border-t-2 border-r-8 rotate-45 cursor-pointer hover:border-purple-400" onClick={(e) => {
                     handleChangeDisplayed(3)
                 }}></div>
             </div>

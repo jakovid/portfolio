@@ -18,7 +18,7 @@ export default function Posts(){
 
     return(
         <section className="flex flex-col items-center w-2/3 p-8">
-            <h2 className="text-4xl font-bold">Blog</h2>
+            <h2 className="text-4xl font-bold">Here is everything I've written.</h2>
             <ul className="w-full">
                 {posts.map(post => (
                     <ListItem key={post.id} post={post} />

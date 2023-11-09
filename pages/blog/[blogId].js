@@ -23,7 +23,7 @@ export default function Post({ post }) {
                 <section className="flex gap-4 flex-col py-4" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
                 <p>
                 <Link href="/blog" className="border-white border-2 py-2 px-4 rounded-s-full rounded-e-full hover:bg-purple-400 hover:border-purple-400">
-                    Back to Blogs
+                    View All Blogs
                 </Link>
                 </p>
             </article>
