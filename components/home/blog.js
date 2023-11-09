@@ -36,17 +36,36 @@ export default function BuildBlog(){
         setDisplayedPosts(newDisplayed)
     }
 
+    function handleChangeDisplayed(num){
+        let newDisplayedPointer = displayedPointer + num
+        if (newDisplayedPointer >= posts.length){
+            newDisplayedPointer = 0
+        }
+        if (newDisplayedPointer < 0){
+            newDisplayedPointer = posts.length - 4
+        }
+
+        setDisplayedPointer(newDisplayedPointer)
+        handleSetDisplayed()
+    }
+
     return(
         <div className="flex flex-col justify-center items-center">
             <div className="h-2 w-full bg-purple-400"></div>
-            <div className="text-4xl font-bold p-8">My Written Content</div>
-            <div className="pb-8">
+            <div className="text-4xl font-bold p-8">Some Stuff I Wrote</div>
+            <div className="pb-8 flex items-center gap-8">
+                <div className="w-24 h-24 border-white border-b-2 border-l-8 rotate-45 cursor-pointer" onClick={(e) => {
+                    handleChangeDisplayed(-3)
+                }}></div>
                 {displayedPosts && displayedPosts.map(post => (
                     <Link href={`/blog/${post.id}`} key={post.id} className="flex cursor-pointer bg-purple-400 flex-wrap w-48 h-48 items-center p-4 rounded-md border-white border-2">
                         <div className="text-white text-2xl font-bold">"{post.title}"</div>
                         <div>{post.date}</div>
                     </Link>
                 ))}
+                <div className="w-24 h-24 border-white border-t-2 border-r-8 rotate-45 cursor-pointer" onClick={(e) => {
+                    handleChangeDisplayed(3)
+                }}></div>
             </div>
         </div>
     )
