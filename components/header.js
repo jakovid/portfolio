@@ -4,8 +4,8 @@ import {BiBookContent} from "react-icons/bi"
 
 export default function BuildHeader(){
     return(
-        <header className="border-white w-full border-b-2 py-4 flex justify-between items-center">
-            <div className="hidden sm:inline">Jacob Dowdle | Full Stack Software Engineer</div>
+        <header className="border-white w-full border-b-2 p-4 flex justify-between items-center">
+            <div className="hidden md:inline text-xl w-full">Jacob Dowdle | Software Engineer</div>
             <div className="flex items-center w-full justify-center gap-8 sm:gap-3">
                 <Link 
                     href="/" 
