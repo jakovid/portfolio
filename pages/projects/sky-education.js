@@ -1,4 +1,5 @@
 import BuildHeader from "@/components/header"
+import Link from "next/link"
 
 export default function BuildSkyEducationProject(){
     return(
@@ -54,7 +55,7 @@ export default function BuildSkyEducationProject(){
                         Near the start of 2023, I knew that I was going to be heading back to the US to pursue a full time role in SWE and wanted to give them the freedom back.
                         I ported the React website over to Next, and began to build out a backend with Node, Express, and MongoDB. After adjusting the frontend to get all of it's content and images 
                         from the backend, I set out to create a secure admin page for the owners. This admin page would give them CRUD access with certain restrictions. After it's completion, the owners
-                        were able to update all written content, all images on the website, and update their staff memebers. In August 2023, I officially handed over all control to the oweners and returned to Cincinnati.
+                        were able to update all written content, all images on the website, and update their staff memebers. In August 2023, <Link href="https://www.skyeducation.online" className="text-purple-300">Sky Education</Link> was officially handed over to the owners.
                     </p>
                 </div>
             </div>
