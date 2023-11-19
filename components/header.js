@@ -23,16 +23,16 @@ export default function BuildHeader(){
                     <div className="hidden sm:inline">Project</div>
                 </Link>
 
-                <Link 
+                {/* <Link 
                     href="/blog" 
                     className="border-white border-2 w-12 h-8 items-center sm:w-24 flex justify-center rounded-s-full rounded-e-full cursor-pointer hover:bg-purple-400 hover:border-purple-400"
                 >
                     <div className="sm:hidden">< BiBookContent /></div>
                     <div className="hidden sm:inline">Blog</div>
-                </Link>
+                </Link> */}
 
                 <Link 
-                    href="/youtube" 
+                    href="https://www.youtube.com/@web3idiots" 
                     className="border-white border-2 items-center w-12 h-8 sm:w-24 flex justify-center rounded-s-full rounded-e-full cursor-pointer hover:bg-purple-400 hover:border-purple-400"
                 >
                     <div className="sm:hidden">< AiFillYoutube /></div>
