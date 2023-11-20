@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 
 export default function BuildProjects(){
@@ -7,14 +8,14 @@ export default function BuildProjects(){
             <div className="h-2 w-full bg-purple-400"/>
             <div className="text-4xl font-bold p-8">Clients and Projects</div>
             <div className="flex flex-col md:flex-row gap-8">
-                <div className="cursor-pointer">
+                <Link href={'/projects/sky-education'}className="cursor-pointer">
                     <Image 
                         src="/images/sky.jpg"
                         width={200}
                         height={150}
                         className="px-4 py-1 bg-white rounded-md"
                     />
-                </div>
+                </Link>
 
                 <div className="cursor-pointer">
                     <Image 
