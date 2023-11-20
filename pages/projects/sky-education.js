@@ -1,16 +1,18 @@
 import BuildHeader from "@/components/header"
 import Link from "next/link"
 import Image from "next/image"
+import { FaGithub } from "react-icons/fa";
+
 
 export default function BuildSkyEducationProject(){
     return(
         <div className="flex flex-col items-center">
             <BuildHeader />
             <div className="flex flex-col items-center px-8 sm:w-2/3 gap-4">
-                <div className="flex flex-col items-center">
-                    <h1 className="text-3xl lg:text-4xl">Project: Sky Education</h1>
-                    <h3>Taipei, Taiwan (臺北市)</h3>
-                    <h3>August 2021 - August 2023</h3>
+                <div className="flex flex-col items-center text-center">
+                    <h1 className="text-3xl lg:text-4xl">Bilingual Website for Sky Education</h1> 
+                    <h3 className="flex items-center gap-2"><FaGithub /> <Link href="https://github.com/jakovid/sky-frontend">github.com/jakovid/sky-frontend</Link></h3>
+                    <h3 className="flex items-center gap-2"><FaGithub /> <Link href="https://github.com/jakovid/sky-backend">github.com/jakovid/sky-backend</Link></h3>
                 </div>
                 <div className="flex w-full gap-4 flex-col pb-8">
                     <Image src="/images/sky-chinese.png" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
