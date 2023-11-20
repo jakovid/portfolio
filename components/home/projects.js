@@ -17,14 +17,14 @@ export default function BuildProjects(){
                     />
                 </Link>
 
-                <div className="cursor-pointer">
+                <Link href={'/projects/elmntri'} className="cursor-pointer">
                     <Image 
                         src="/images/elmntri.png"
                         width={200}
                         height={150}
                         className="px-4 py-1 bg-white rounded-md"
                     />
-                </div>
+                </Link>
 
                 <div className="cursor-pointer">
                     <div className="px-1 py-1 bg-[#f2fb07] rounded-md flex items-center">
