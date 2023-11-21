@@ -13,7 +13,7 @@ export default function BuildElmntriProject(){
                     <h3 className="flex items-center gap-2"><FaGithub /> <Link href="https://github.com/jakovid/nutrient-tracker">github.com/jakovid/nutrient-tracker</Link></h3>
                 </div>
                 <div className="flex w-full gap-4 flex-col pb-8">
-                    <Image src="/images/micronutrient-1.png" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
+                    <Image src="/images/micronutrient-1.png" alt="micronutrient dashboard" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
                     <p>In early 2023, I was trying my best to secure a full time software engineer role at a company in Taipei to stay close to my partner and friends. 
                         I knew that I needed to move on to a new project in order to grow as a developer, so I started the dreaded job hunt.
                     </p>
@@ -22,10 +22,10 @@ export default function BuildElmntriProject(){
                         are quite conservative when it comes to hiring programmers. A CS degree is a must have, and the pay is terrible.
                     </p>
                     <p>
-                        Knowing that I wouldn't be able to find what I wanted with my set of skills and experience at that time, I had decided to focus towards repatriating.
+                        Knowing that I wouldn&apos;t be able to find what I wanted with my set of skills and experience at that time, I had decided to focus towards repatriating.
                         A friend of mine knew that I would be open to a short term role, and that is how I ended up meeting the bright minds over at Elmntri.
                     </p>
-                    <Image src="/images/micronutrient-2.png" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
+                    <Image src="/images/micronutrient-2.png" height={400} alt="micronutrient app" width={800} className="border-8 border-purple-400 rounded-lg"/>
                     <p>
                         Elmntri is a start-up studio, with a focus on root cause health. They wanted to create products that helped those who could not get the treatment
                         or results that they needed from medical intervention. They had raised some funding the year before, and they were now looking to start buidling.
@@ -34,7 +34,7 @@ export default function BuildElmntriProject(){
                         I was brought on as part of their first cohort of rapid prototypers. Our task was relatively straight forward, but challenging. We were given two weeks
                         to research the industry, find an underserved section of an already niche market, and build a prototype of a product that the studio to hand to an entrepreneur in residence to run with.
                     </p>
-                    <Image src="/images/micronutrient-3.png" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
+                    <Image src="/images/micronutrient-3.png" height={400} width={800} alt="micronutrient app" className="border-8 border-purple-400 rounded-lg"/>
                     <p>
                         I spent the better part of the first week studying the market and reading all of the scientific research in the field that I could. I discovered that 
                         there was a strong focus on micronutrient analysis within the target market, with plenty of scientifically back research on how to combat certain symptoms with increased or decreased micronutrient intake.

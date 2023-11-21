@@ -29,7 +29,7 @@ export default function BuildResume(){
                     <div className="font-bold md:text-xl">Software Engineer @ Sky Education (contract)</div>
                     <div className="pb-4 text-sm md:text-lg md:pb-6"> 臺北 (Taipei)  | https://skyeducation.online</div>
                     <div>
-                        I designed, developed, and maintained Sky Education's inaugral bilingual website, establishing its first-ever
+                        I designed, developed, and maintained Sky Education&apos;s inaugral bilingual website, establishing its first-ever
                         digital footprint to drive business growth and recruit new educators. I generated an impressive annual average 
                         of around 360% lead-to-opening ratio with the website. Additionally, this digital presence acted as a pivotal
                         element to mitigate the annual 17% turnover, resulting in filling 100% of yearly open educator and staff positions.
@@ -49,7 +49,7 @@ export default function BuildResume(){
                         was an underserved group in the market. Unfortunately, we did not account for a massive pandemic to shut down tourism
                          globally. Luckily we were in Taiwan, where they shut the borders down quickly and we remained relatively untouched by
                         COVID for the first year, so we pivoted into local venue and event promotion through our website and mobile app. 
-                        Then a pilot broke out of quarantine in 2021 and we joined the rest of the world. I'll warn everyone the next time 
+                        Then a pilot broke out of quarantine in 2021 and we joined the rest of the world. I&apos;ll warn everyone the next time 
                         I try to start a company that the industry will likely collapse that year.
                     </div>
                 </div>

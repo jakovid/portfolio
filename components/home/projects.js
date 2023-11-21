@@ -11,6 +11,7 @@ export default function BuildProjects(){
                 <Link href={'/projects/sky-education'}className="cursor-pointer">
                     <Image 
                         src="/images/sky.jpg"
+                        alt="sky logo"
                         width={200}
                         height={150}
                         className="px-4 py-1 bg-white rounded-md"
@@ -20,6 +21,7 @@ export default function BuildProjects(){
                 <Link href={'/projects/elmntri'} className="cursor-pointer">
                     <Image 
                         src="/images/elmntri.png"
+                        alt="elmntri logo"
                         width={200}
                         height={150}
                         className="px-4 py-1 bg-white rounded-md"
@@ -33,6 +35,7 @@ export default function BuildProjects(){
                         </div>
                         <Image 
                             src="/images/onemoredrink.jpg"
+                            alt="one more drink logo"
                             width={40}
                             height={40}
                         />
