@@ -4,9 +4,9 @@ import Link from "next/link"
 
 export default function BuildProjects(){
     return(
-        <div className="flex flex-col justify-center items-center py-12">
+        <div className="flex flex-col justify-center items-center text-center py-12">
             <div className="h-2 w-full bg-purple-400"/>
-            <div id="my-projects" className="text-4xl font-bold p-8">Clients and Projects</div>
+            <div id="my-projects" className="text-3xl sm:text-4xl font-bold p-8">Clients and Projects</div>
             <div className="flex flex-col md:flex-row gap-8">
                 <Link href={'/projects/sky-education'}className="cursor-pointer">
                     <Image 

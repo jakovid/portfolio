@@ -12,7 +12,7 @@ export default function BuildElmntriProject(){
                     <h1 className="text-3xl lg:text-4xl">Micronutrient Tracker for Elmntri</h1>
                     <h3 className="flex items-center gap-2"><FaGithub /> <Link href="https://github.com/jakovid/nutrient-tracker">github.com/jakovid/nutrient-tracker</Link></h3>
                 </div>
-                <div className="flex w-full gap-4 flex-col pb-8">
+                <div className="flex w-full gap-4 flex-col pb-8 items-center">
                     <Image src="/images/micronutrient-1.png" alt="micronutrient dashboard" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
                     <p>In early 2023, I was trying my best to secure a full time software engineer role at a company in Taipei to stay close to my partner and friends. 
                         I knew that I needed to move on to a new project in order to grow as a developer, so I started the dreaded job hunt.

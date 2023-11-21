@@ -14,7 +14,7 @@ export default function BuildSkyEducationProject(){
                     <h3 className="flex items-center gap-2"><FaGithub /> <Link href="https://github.com/jakovid/sky-frontend">github.com/jakovid/sky-frontend</Link></h3>
                     <h3 className="flex items-center gap-2"><FaGithub /> <Link href="https://github.com/jakovid/sky-backend">github.com/jakovid/sky-backend</Link></h3>
                 </div>
-                <div className="flex w-full gap-4 flex-col pb-8">
+                <div className="flex w-full gap-4 flex-col pb-8 items-center">
                     <Image src="/images/sky-chinese.png" alt="sky education website" height={400} width={800} className="border-8 border-purple-400 rounded-lg"/>
                     <p> In the years leading up to taking on this project, I had been trying my best to keep my tourism startup alive during COVID. In order to do that while the borders were closed, we had to find cash and quickly. I had a friend that worked at an education company, and they were willing to hire me to teach part time.
                         I took that job in order to make enough cash to cover the basic necessities and keep our business afloat while we tried to find our footing. I had sunk too much time and money into it to give up.
