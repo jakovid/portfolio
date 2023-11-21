@@ -16,7 +16,7 @@ export default function BuildHeader(){
                 </Link>
 
                 <Link 
-                    href="/projects" 
+                    href="../#my-projects" 
                     className="border-white border-2 items-center w-12 h-8 sm:w-24 flex justify-center rounded-s-full rounded-e-full cursor-pointer hover:bg-purple-400 hover:border-purple-400"
                 >
                     <div className="sm:hidden">< AiFillProject /></div>
@@ -31,13 +31,14 @@ export default function BuildHeader(){
                     <div className="hidden sm:inline">Blog</div>
                 </Link> */}
 
-                <Link 
-                    href="https://www.youtube.com/@web3idiots" 
+                <a 
+                    href="https://www.youtube.com/@web3idiots"
+                    target="_blank"
                     className="border-white border-2 items-center w-12 h-8 sm:w-24 flex justify-center rounded-s-full rounded-e-full cursor-pointer hover:bg-purple-400 hover:border-purple-400"
                 >
                     <div className="sm:hidden">< AiFillYoutube /></div>
                     <div className="hidden sm:inline">YouTube</div>
-                </Link>
+                </a>
             </div>
         </header>
     )
