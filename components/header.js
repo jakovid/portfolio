@@ -16,7 +16,7 @@ export default function BuildHeader(){
                 </Link>
 
                 <Link 
-                    href="#my-projects" 
+                    href="../#my-projects" 
                     className="border-white border-2 items-center w-12 h-8 sm:w-24 flex justify-center rounded-s-full rounded-e-full cursor-pointer hover:bg-purple-400 hover:border-purple-400"
                 >
                     <div className="sm:hidden">< AiFillProject /></div>
