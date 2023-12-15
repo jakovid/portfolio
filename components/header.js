@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function BuildHeader(){
     return(
         <header className="border-white w-full border-b-2 p-4 flex justify-between items-center">
-            <div className="hidden md:flex text-xl w-full items-center gap-2">Jacob Dowdle | <a href="https://github.com/jakovid" target="_blank"><FaGithub /></a> <a href="https://www.linkedin.com/in/jacobdowdle/" target="_blank"><FaLinkedin /></a> </div>
+            <div className="hidden md:flex text-xl w-full items-center gap-2"><Link href="/" className="cursor-pointer">Jacob Dowdle</Link> | <a href="https://github.com/jakovid" target="_blank"><FaGithub /></a> <a href="https://www.linkedin.com/in/jacobdowdle/" target="_blank"><FaLinkedin /></a> </div>
             <div className="flex items-center w-full justify-center gap-8 sm:gap-3">
                 <Link 
                     href="/" 
