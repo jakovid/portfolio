@@ -62,7 +62,10 @@ export default function BuildHomeHero(){
 
             {/* Journey + Map */}
             <div className="w-full max-w-4xl">
-                <h2 className="text-2xl font-semibold mb-6 text-white">My Journey</h2>
+                <div className="flex items-center gap-3 mb-6">
+                    <span className="w-1 h-7 bg-purple-400 rounded-full" />
+                    <h2 className="text-2xl font-semibold text-white">My Journey</h2>
+                </div>
                 <div className="flex flex-col md:flex-row gap-6 items-stretch">
 
                     {/* Scrollable timeline */}

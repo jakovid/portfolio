@@ -100,7 +100,7 @@ export default function BuildResume() {
                         <h2 className="text-2xl font-semibold text-white">Tech Experience</h2>
                     </div>
                     <div className="relative">
-                        <div className="absolute left-[8px] top-2 bottom-8 w-px bg-purple-400/20" />
+                        <div className="absolute left-[8px] top-2 bottom-8 w-px bg-purple-400/30" />
                         {experience.map(entry => (
                             <TimelineEntry key={entry.dates} {...entry} />
                         ))}
@@ -114,7 +114,7 @@ export default function BuildResume() {
                         <h2 className="text-2xl font-semibold text-white">Education</h2>
                     </div>
                     <div className="relative">
-                        <div className="absolute left-[8px] top-2 bottom-8 w-px bg-purple-400/20" />
+                        <div className="absolute left-[8px] top-2 bottom-8 w-px bg-purple-400/30" />
                         {education.map(entry => (
                             <TimelineEntry key={entry.dates} {...entry} />
                         ))}
