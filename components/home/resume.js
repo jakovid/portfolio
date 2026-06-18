@@ -1,96 +1,126 @@
-export default function BuildResume(){
-    return(
-        <div className="flex flex-col justify-center items-center ">
-            <div className="h-2 w-full bg-purple-400 mt-8"></div>
-            <div className="text-4xl font-bold p-8 border-purple-400 lg:border-e-2 w-full lg:w-2/3 flex justify-center  md:bg-gradient-to-r md:from-transparent md:to-purple-400">Tech Experience</div>
-            <div className="md:grid md:grid-cols-3 lg:w-2/3">
-                <div className="flex justify-center p-2 text-xl text-purple-400 bg-white md:text-white font-bold md:text-sm lg:text-lg md:bg-purple-400 h-10 md:rounded-tl-full">
-                    SEPTEMBER 2023 - PRESENT
-                </div>
+const experience = [
+    {
+        role: "Applied AI — Agent Optimization",
+        company: "Meta",
+        dates: "June '26 — Present",
+        location: "Remote",
+        description: "Building and optimizing AI agent systems on Meta's Applied AI team, focused on reinforcement learning-based agent performance and evaluation infrastructure.",
+    },
+    {
+        role: "Infrastructure — DC Tooling",
+        company: "Meta",
+        dates: "Oct '25 — May '26",
+        location: "Remote",
+        description: "Led core feature development on a greenfield DC operations platform consolidating 3 legacy systems into a single source of truth for infrastructure planning and change management. Built dashboards visualizing power, energy, rack capacity, and deployment data across full fleet hierarchies — from region down to server. Partnered with directors, PMs, designers, and data center operators in a high-ambiguity 0→1 environment. Introduced AI-assisted prototyping workflows across 34 contributors, cutting diff landing time by 50% and revision cycles by 30%.",
+    },
+    {
+        role: "Monetization — Developer Experience",
+        company: "Meta",
+        dates: "Oct '24 — Oct '25",
+        location: "Remote",
+        description: "Designed and deployed an org-wide migration dashboard used by engineering leadership to track metric adoption and migration health in real time. Built an engineering efficiency analysis tool to quantify productivity loss from merge-conflict-driven codegen revisions. Delivered automation tooling for production config validation, event verification, and metrics pipeline reliability across 3+ cross-functional teams — saving 1,670+ engineering hours annually.",
+    },
+    {
+        role: "Technical Interviewer",
+        company: "Scale AI",
+        dates: "Jan '24 — May '24",
+        location: "Remote",
+        description: "Conducted technical interviews and evaluated software engineering candidates, contributing to AI training data quality for coding-related tasks.",
+    },
+    {
+        role: "Full Stack Software Engineering Fellow",
+        company: "Formation",
+        dates: "Sep '23 — May '24",
+        location: "Remote · formation.dev",
+        description: "Selected for a highly-competitive fellowship with personalized coaching from engineers at Meta, Amazon, Apple, Netflix, and Google. Completed intensive training in data structures, algorithms, and system design through independent study, pair programming, and mentor-led groups.",
+    },
+    {
+        role: "Software Engineer (contract)",
+        company: "Sky Education",
+        dates: "Aug '21 — Aug '23",
+        location: "臺北 (Taipei) · skyeducation.online",
+        description: "Designed, developed, and maintained Sky Education's inaugural bilingual website, establishing its first-ever digital footprint. Generated an annual average of ~360% lead-to-opening ratio and helped fill 100% of yearly open educator and staff positions.",
+    },
+    {
+        role: "Co-Founder",
+        company: "OneMoreDrink.app",
+        dates: "Oct '19 — Jul '21",
+        location: "臺北 (Taipei)",
+        description: "Co-founded a tourism startup in Taipei that pivoted into local venue and event promotion during COVID via website and mobile app. Navigated a full pandemic from one of the few places that handled it well — until a pilot broke quarantine in 2021.",
+    },
+]
 
-                <div className="col-span-2 border-purple-400 md:border-s-2 md:border-t-2 px-8 md:ps-4 pt-2 pb-16">
-                    <div className="font-bold md:text-xl">Full Stack Software Engineering Fellow @ Formation</div>
-                    <div className=" pb-4 md:pb-6 text-sm md:text-lg">Remote | https://formation.dev</div>
+const education = [
+    {
+        role: "Master of Law — Comparative Politics",
+        company: "复旦大学 (Fudan University)",
+        dates: "Sep '17 — Jun '19",
+        location: "上海 (Shanghai)",
+        description: "Full-ride scholarship from the China Scholarship Council (CSC). Focused on Political Economy, culminating in a thesis on Chinese and American official financing in Africa: 新兴援助国与传统援助国的差异：以中国和美国在非洲的官方援助为例.",
+    },
+    {
+        role: "Bachelor of Science in Business",
+        company: "Miami University",
+        dates: "Aug '11 — May '14",
+        location: "Oxford, OH · Farmer School of Business",
+        description: "Focused on marketing and international business in the APAC region. Participated in the Pacific Rim Business Program, traveling to China, Japan, and South Korea to learn from C-Suite executives. Selected as one of three students to intern in Seoul, South Korea.",
+    },
+]
+
+function TimelineEntry({ role, company, dates, location, description }) {
+    return (
+        <div className="relative pl-8 pb-8 group">
+            <div className="absolute left-[3px] top-2 w-3 h-3 rounded-full bg-purple-400 ring-2 ring-black group-hover:bg-blue-400 transition-colors" />
+            <div className="rounded-xl border border-white/10 bg-white/5 p-4 hover:border-purple-400/40 transition-colors">
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-1">
                     <div>
-                        I was selected for a highly-competitive fellowship at Formation. I received personalized coaching from
-                        engineers at Meta, Amazon, Apple, Netflix, Google, and other top-tier companies. I have spent the past
-                        few months completing intensive traing to master theoretical computer science topics, such as data structures,
-                        algorithms, and system design, through independent study, pair programming, and small mentor-led groups.
+                        <span className="font-bold text-white text-base md:text-lg">{role}</span>
+                        <span className="text-purple-400"> @ {company}</span>
                     </div>
+                    <span className="text-xs text-purple-300 bg-purple-400/10 border border-purple-400/30 px-2 py-1 rounded-full whitespace-nowrap self-start">
+                        {dates}
+                    </span>
                 </div>
+                <div className="text-xs text-gray-500 mb-3">{location}</div>
+                <div className="text-sm text-gray-300 leading-relaxed">{description}</div>
             </div>
+        </div>
+    )
+}
 
-            <div className="md:grid md:grid-cols-3 md:w-2/3">
-                <div className="flex justify-center p-2 text-xl text-purple-400 bg-white md:text-white font-bold md:text-sm lg:text-lg md:bg-purple-400 h-10 md:rounded-tl-full">
-                    AUGUST 2021 - AUGUST 2023
-                </div>
+export default function BuildResume() {
+    return (
+        <div className="flex flex-col items-center px-4 py-12 w-full">
+            <div className="w-full max-w-4xl flex flex-col gap-12">
 
-                <div className="col-span-2 border-purple-400 md:border-s-2 px-8 md:ps-4 pt-2 pb-16">
-                    <div className="font-bold md:text-xl">Software Engineer @ Sky Education (contract)</div>
-                    <div className="pb-4 text-sm md:text-lg md:pb-6"> 臺北 (Taipei)  | https://skyeducation.online</div>
-                    <div>
-                        I designed, developed, and maintained Sky Education&apos;s inaugral bilingual website, establishing its first-ever
-                        digital footprint to drive business growth and recruit new educators. I generated an impressive annual average 
-                        of around 360% lead-to-opening ratio with the website. Additionally, this digital presence acted as a pivotal
-                        element to mitigate the annual 17% turnover, resulting in filling 100% of yearly open educator and staff positions.
+                {/* Tech Experience */}
+                <div>
+                    <div className="flex items-center gap-3 mb-8">
+                        <span className="w-1 h-7 bg-purple-400 rounded-full" />
+                        <h2 className="text-2xl font-semibold text-white">Tech Experience</h2>
+                    </div>
+                    <div className="relative">
+                        <div className="absolute left-[8px] top-2 bottom-8 w-px bg-purple-400/20" />
+                        {experience.map(entry => (
+                            <TimelineEntry key={entry.dates} {...entry} />
+                        ))}
                     </div>
                 </div>
-            </div>
 
-            <div className="md:grid md:grid-cols-3 md:w-2/3">
-                <div className="flex justify-center p-2 text-xl text-purple-400 bg-white md:text-white font-bold md:text-sm lg:text-lg md:bg-purple-400 h-10 md:rounded-tl-full">
-                    OCTOBER 2019 - JULY 2021
-                </div>
-                <div className="col-span-2 border-purple-400 md:border-s-2 border-b-2 px-8 md:ps-4 pt-2 pb-16 ">
-                    <div className="font-bold md:text-xl">Co-Founder @ OneMoreDrink.app</div>
-                    <div className="pb-4 text-sm md:text-lg md:pb-6"> 臺北 (Taipei)</div>
-                    <div>
-                        I moved to Taipei to co-found a tourism startup in October 2019. We had done our research and knew that there
-                        was an underserved group in the market. Unfortunately, we did not account for a massive pandemic to shut down tourism
-                         globally. Luckily we were in Taiwan, where they shut the borders down quickly and we remained relatively untouched by
-                        COVID for the first year, so we pivoted into local venue and event promotion through our website and mobile app. 
-                        Then a pilot broke out of quarantine in 2021 and we joined the rest of the world. I&apos;ll warn everyone the next time 
-                        I try to start a company that the industry will likely collapse that year.
+                {/* Education */}
+                <div>
+                    <div className="flex items-center gap-3 mb-8">
+                        <span className="w-1 h-7 bg-purple-400 rounded-full" />
+                        <h2 className="text-2xl font-semibold text-white">Education</h2>
+                    </div>
+                    <div className="relative">
+                        <div className="absolute left-[8px] top-2 bottom-8 w-px bg-purple-400/20" />
+                        {education.map(entry => (
+                            <TimelineEntry key={entry.dates} {...entry} />
+                        ))}
                     </div>
                 </div>
-            </div>
 
-
-            <div className="text-4xl font-bold p-8 w-full md:w-2/3 border-purple-400 md:border-e-2 flex justify-center  md:bg-gradient-to-r md:from-transparent md:to-purple-400">Education</div>
-            <div className="md:grid md:grid-cols-3 md:w-2/3">
-                <div className="flex justify-center p-2 text-xl text-purple-400 bg-white md:text-white font-bold md:text-sm lg:text-lg md:bg-purple-400 h-10 md:rounded-tl-full">
-                    SEPTEMBER 2017 - JUNE 2019
-                </div>
-                <div className="col-span-2 border-purple-400 md:border-s-2 md:border-t-2 px-8 md:ps-4 pt-2 pb-16 ">
-                    <div className="font-bold md:text-xl">Master of Law @ 复旦大学 (Fudan University)</div>
-                    <div className="pb-4 text-sm md:text-lg md:pb-6"> 上海 (Shanghai)</div>
-                    <div>
-                        I received a Master of Law in Comparative Politics from the School of International Relations and Public Affairs 
-                        at Fudan University. Though not a commonly known university in the US, Fudan is one of the top universities in the 
-                        world (#31 in 2022). I received a full ride scholarship from the China Scholarship Council (CSC) to pursue my studies. During my enrollment, 
-                        I balanced my interest in business and government by focusing heavily on Political Economy, culmintating in my thesis titled 
-                        新兴援助国与传统援助国的差异：以中国和美国在非洲的官方援助为例 
-                        (Emerging and Traditional Donors in Developing States: The Determinants of Chinese and American Official Financing in Africa)
-
-                    </div>
-                </div>
-            </div>
-
-            <div className="md:grid md:grid-cols-3 md:w-2/3">
-            <div className="flex justify-center p-2 text-xl text-purple-400 bg-white md:text-white font-bold md:text-sm lg:text-lg md:bg-purple-400 h-10 md:rounded-tl-full">
-                    AUGUST 2011 - MAY 2014
-                </div>
-                <div className="col-span-2 border-purple-400 md:border-s-2 md:border-b-2 px-8 md:ps-4 pt-2 pb-16 ">
-                    <div className="font-bold md:text-xl">Bachelor of Science in Business @ Miami University</div>
-                    <div className="pb-4 text-sm md:text-lg md:pb-6"> Oxford, OH</div>
-                    <div>
-                        I graduated with a Bachelor of Science in Business from the Farmer School of Business (FSB) at Miami University and the China Business 
-                        Program Certification. At the time of my enrollment, FSB was considered to be one of the top ten public business schools in the United States. 
-                        I focused primarily on marketing and international business, specifically in the APAC region. I partook in the Pacific Rim Business Program, where a small group 
-                        of students were selected to travel to China, Japan, and South Korea to learn from C-Suite executives working in MNCs. I was then selected 
-                        as one of three students to intern in Seoul, South Korea.
-                    </div>
-                </div>
             </div>
         </div>
     )
